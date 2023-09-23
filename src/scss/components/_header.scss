@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  &__logo {
+    width: 150px;
+    height: 83px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ul {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-right: 80px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+  }
+
+  &__li {
+  }
+
+  &__a {
+    color: var(--c-text-head);
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+  }
+}

@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: var(--ff);
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+.container {
+	max-width: calc(1694px + 40px);
+	padding: 20px;
+	margin-inline: auto;
+}

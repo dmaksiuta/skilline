@@ -1,0 +1,78 @@
+.welcome {
+  background: url("src/assets/header-bg.svg");
+  min-height: 1118px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__info {
+    flex-shrink: 0;
+    max-width: 681px;
+    padding-left: 40px;
+  }
+
+  &__title {
+    color: var(--c-primary);
+    font-size: 54px;
+    font-weight: 700;
+    margin-bottom: 34px;
+    span {
+      color: var(--c-accent);
+    }
+  }
+
+  &__desc {
+    color: var(--c-text-add);
+    font-family: var(--ff-second);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 52px;
+  }
+
+  &__btn {
+    .btn._primary {
+      padding: 22px 38px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__image {
+  }
+  .custom-shape-divider-top-1695460036 {
+    position: absolute;
+    bottom: -127px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-top-1695460036 svg {
+    position: relative;
+    display: block;
+    width: calc(272% + 1.3px);
+    height: 127px;
+  }
+
+  .custom-shape-divider-top-1695460036 .shape-fill {
+    fill: var(--c-welcome-bg);
+  }
+}
