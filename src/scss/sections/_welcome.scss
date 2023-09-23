@@ -1,10 +1,11 @@
 .welcome {
-  background: url("src/assets/header-bg.svg");
+  background: var(--c-welcome-bg);
   min-height: 1118px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 300px;
   display: flex;
+  position: relative;
   flex-direction: column;
   &__container {
     width: 100%;
@@ -55,24 +56,14 @@
   }
 
   &__image {
-  }
-  .custom-shape-divider-top-1695460036 {
     position: absolute;
-    bottom: -127px;
-    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &__wawe {
+    z-index: 10;
+    position: absolute;
+    bottom: -250px;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-
-  .custom-shape-divider-top-1695460036 svg {
-    position: relative;
-    display: block;
-    width: calc(272% + 1.3px);
-    height: 127px;
-  }
-
-  .custom-shape-divider-top-1695460036 .shape-fill {
-    fill: var(--c-welcome-bg);
   }
 }
