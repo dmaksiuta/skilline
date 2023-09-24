@@ -1,0 +1,151 @@
+.section-features {
+  .span {
+    color: var(--c-accent);
+  }
+
+  &__head {
+    margin-bottom: 84px;
+  }
+
+  &__title {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 180%;
+    text-align: center;
+    color: #2f327d;
+  }
+
+  &__desc {
+    color: #696984;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &._block-tools {
+      margin-bottom: 160px;
+    }
+
+    &._block-quizzes {
+      margin-bottom: 167px;
+    }
+
+    &._block-management {
+      margin-bottom: 180px;
+    }
+
+    &._block-discussion {
+      margin-bottom: 106px;
+    }
+  }
+
+  &__info {
+    &._info-quizzes {
+      padding-bottom: 113px;
+    }
+  }
+
+  &__title-block {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 160%;
+    color: #2f327d;
+
+    &._title-tools {
+      max-width: 393px;
+    }
+
+    &._title-quizzes {
+      max-width: 347px;
+    }
+
+    &._title-management {
+      max-width: 421px;
+    }
+
+    &._title-discussion {
+      max-width: 274px;
+    }
+  }
+
+  &__desc-block {
+    color: #696984;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.44px;
+
+    &._desc-tools {
+      max-width: 568px;
+    }
+
+    &._desc-quizzes {
+      max-width: 596px;
+    }
+
+    &._desc-management {
+      max-width: 646px;
+    }
+
+    &._desc-discussion {
+      max-width: 540px;
+    }
+  }
+
+  //   image-features
+  &__tools-img {
+    max-width: 637.196px;
+    max-height: 611px;
+    margin-left: 236px;
+  }
+
+  &__quizzes-img {
+    max-width: 617px;
+    max-height: 651.49px;
+    margin-right: 248px;
+  }
+
+  &__management-img {
+    max-width: 808.321px;
+    max-height: 560px;
+    margin-left: 94px;
+  }
+
+  &__discussion-img {
+    max-width: 755.241px;
+    max-height: 499px;
+    margin-right: 191px;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+
+    ._features {
+      border: 1px solid var(--c-accent);
+      padding: 19px 38px;
+      color: var(--c-accent);
+      font-family: var(--ff-second);
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 180%;
+      letter-spacing: 0.48px;
+      transition: var(--transition);
+
+      &:hover {
+        background: var(--c-accent);
+        color: var(--c-white);
+      }
+    }
+  }
+}
