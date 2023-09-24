@@ -1,0 +1,123 @@
+.with {
+  &__container {
+    display: flex;
+    max-width: 1540px;
+    margin-inline: auto;
+    gap: 76px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 21px 25px;
+    margin-bottom: 160px;
+    margin-top: 160px;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    color: var(--c-primary);
+    font-family: var(--ff);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 160%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 73px;
+      height: 73px;
+      border-radius: 50%;
+      background-color: #f4b767;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -12px;
+      left: 14px;
+    }
+  }
+
+  &__span {
+    color: var(--c-accent);
+    font-family: var(--ff);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 160%;
+  }
+
+  &__desc {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.48px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    position: relative;
+
+    &::before {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #f4b767;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      top: 90px;
+    }
+  }
+
+  &__a {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 180%;
+    text-decoration-line: underline;
+  }
+
+  &__img {
+    position: relative;
+    border-radius: 20px;
+  }
+  &__avatar {
+    min-width: 705px;
+  }
+
+  &__border {
+    position: relative;
+  }
+
+  &__border-bg {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 138px;
+      height: 138px;
+      border-radius: 20px;
+      background: #23bdee;
+      top: 50%;
+      transform: translateY(-50%);
+      top: 50px;
+      left: -20px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 231px;
+      height: 231px;
+      border-radius: 20px;
+      background: #f3ac50;
+      top: 50%;
+      transform: translateY(-50%);
+      top: 380px;
+      left: 495px;
+    }
+  }
+}
