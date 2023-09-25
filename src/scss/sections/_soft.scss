@@ -26,10 +26,13 @@
   }
 
   &__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
+    display: flex;
     gap: 60px;
+
+    @include desktop-small {
+      display: grid;
+      justify-content: center;
+    }
   }
 }
 
@@ -46,7 +49,9 @@
     padding-bottom: 50px;
   }
 
-  &__online-image, &__ease-image, &__customer-image {
+  &__online-image,
+  &__ease-image,
+  &__customer-image {
     width: 120px;
     height: 100px;
     margin: 0 auto;

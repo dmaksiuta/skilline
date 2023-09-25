@@ -23,33 +23,58 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 180%;
+    @include tablet {
+      max-width: 500px;
+      margin-inline: auto;
+    }
   }
 
   &__block {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include desktop-small {
+      gap: 30px;
+    }
 
     &._block-tools {
       margin-bottom: 160px;
+      @include desktop-small {
+        display: grid;
+      }
     }
 
     &._block-quizzes {
       margin-bottom: 167px;
+      @include desktop-small {
+        flex-direction: column-reverse;
+      }
     }
 
     &._block-management {
       margin-bottom: 180px;
+
+      @include desktop-small {
+        display: grid;
+      }
     }
 
     &._block-discussion {
       margin-bottom: 106px;
+
+      @include desktop-small {
+        flex-direction: column-reverse;
+      }
     }
   }
 
   &__info {
     &._info-quizzes {
       padding-bottom: 113px;
+
+      @include desktop-small {
+        text-align: center;
+      }
     }
   }
 
@@ -62,23 +87,39 @@
 
     &._title-tools {
       max-width: 393px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._title-quizzes {
       max-width: 347px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._title-management {
       max-width: 421px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._title-discussion {
       max-width: 274px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
   }
 
   &__desc-block {
-    color: #696984;
+    color: var(--c-text-primary);
     font-family: var(--ff);
     font-size: 22px;
     font-weight: 400;
@@ -87,18 +128,35 @@
 
     &._desc-tools {
       max-width: 568px;
+
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._desc-quizzes {
       max-width: 596px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._desc-management {
       max-width: 646px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
 
     &._desc-discussion {
       max-width: 540px;
+      @include desktop-small {
+        margin-inline: auto;
+        text-align: center;
+      }
     }
   }
 
@@ -107,24 +165,36 @@
     max-width: 637.196px;
     max-height: 611px;
     margin-left: 236px;
+    @include desktop-small {
+      margin-left: 0;
+    }
   }
 
   &__quizzes-img {
     max-width: 617px;
     max-height: 651.49px;
     margin-right: 248px;
+    @include desktop-small {
+      margin-right: 0;
+    }
   }
 
   &__management-img {
     max-width: 808.321px;
     max-height: 560px;
     margin-left: 94px;
+    @include desktop-small {
+      margin-left: 0;
+    }
   }
 
   &__discussion-img {
     max-width: 755.241px;
     max-height: 499px;
     margin-right: 191px;
+    @include desktop-small {
+      margin-right: 0;
+    }
   }
 
   &__btn {
