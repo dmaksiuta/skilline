@@ -4,14 +4,41 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+
   &__logo {
     width: 150px;
     height: 83px;
   }
 
+  &__backdrop {
+    background: rgba(0, 0, 0, 0.674);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    transform: translateX(-120%);
+    display: none;
+    transition: var(--transition);
+    opacity: 0;
+
+    @include desktop-small {
+      display: block;
+    }
+
+    &._active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;
+    @include desktop-small {
+      gap: 300px;
+    }
   }
 
   &__ul {
@@ -19,6 +46,32 @@
     align-items: center;
     gap: 80px;
     margin-right: 80px;
+
+    @include desktop-small {
+      z-index: 9999;
+      position: fixed;
+      width: 70%;
+      height: 100%;
+      flex-direction: column;
+      left: 0;
+      top: 0;
+      background: var(--c-primary);
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-120%);
+      transition: var(--transition);
+    }
+
+    &._active {
+      transform: translateX(0);
+    }
+
+    .icon-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      color: var(--c-text-white);
+    }
   }
 
   &__btn {
@@ -27,13 +80,41 @@
     gap: 34px;
   }
 
-  &__li {
-  }
-
   &__a {
     color: var(--c-text-head);
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.44px;
+    @include desktop-small {
+      font-size: 35px;
+      font-weight: 500;
+      color: var(--c-text-white);
+    }
   }
+}
+
+.icon-menu,
+.icon-close {
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.6s;
+  font-size: 70px;
+  font-weight: 600;
+
+  @include desktop-small {
+    display: inline-block;
+  }
+}
+
+.icon-menu {
+  &._active {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.icon-menu {
+  padding-right: 25px;
+}
+.no-scroll {
+  overflow: hidden;
 }

@@ -6,22 +6,36 @@
   display: flex;
   position: relative;
   flex-direction: column;
+
   &__container {
     width: 100%;
     display: flex;
     flex-grow: 1;
+
+    @include desktop {
+      justify-content: center;
+    }
   }
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+
+    @include desktop {
+      display: grid;
+      flex-direction: column-reverse;
+    }
   }
 
   &__info {
     flex-shrink: 0;
     max-width: 681px;
     padding-left: 40px;
+    @include desktop {
+      margin-top: 100px;
+      margin-inline: auto;
+    }
   }
 
   &__title {
@@ -58,11 +72,19 @@
     position: absolute;
     right: 0;
     bottom: 0;
+
+    @include desktop {
+      position: relative;
+    }
   }
   &__wawe {
     z-index: 10;
     position: absolute;
     bottom: -250px;
     width: 100%;
+
+    @include desktop-small {
+      display: none;
+    }
   }
 }

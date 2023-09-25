@@ -13,12 +13,12 @@
   text-align: center;
 
   &._primary {
-    color: #fff;
+    color: var(--c-white);
     background: var(--c-accent);
   }
 
   &._secondary {
-    color: #6c6c6c;
+    color: var(--c-btn-sec);
     background: var(--c-white);
     box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.03);
   }

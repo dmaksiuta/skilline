@@ -1,27 +1,29 @@
 // breakpoints
+$desktop: 1600px;
+
 $desktop-small: 1200px;
 $tablet: 992px;
 $tablet-small: 768px;
 $mobile: 576px;
 
 :root {
-	--ff: 'Poppins', sans-serif;
-	--ff-second: 'Nunito Sans', sans-serif;
+  --ff: "Poppins", sans-serif;
+  --ff-second: "Nunito Sans", sans-serif;
 
-	--transition: .2s all ease-in-out;
+  --transition: 0.2s all ease-in-out;
 
-	--c-primary: #2F327D;
-	--c-accent: #F48C06;
-	--c-brand: #65DAFF;
+  --c-primary: #2f327d;
+  --c-accent: #f48c06;
+  --c-brand: #65daff;
 
-	--c-text-white: #fff;
+  --c-text-white: #fff;
 
-	--c-welcome-bg: #FFF2E1;
+  --c-welcome-bg: #fff2e1;
 
-	--c-text-head: #252641;
-	--c-text-add: #464646;
-	--c-text-primary: #696984;
+  --c-text-head: #252641;
+  --c-text-add: #464646;
+  --c-text-primary: #696984;
 
-	--c-white: #fff;
-
+  --c-white: #fff;
+  --c-btn-sec: #6c6c6c;
 }

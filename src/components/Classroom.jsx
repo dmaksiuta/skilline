@@ -1,6 +1,6 @@
 import withBg from "../assets/withbg.png";
 
-export const With = () => {
+export const Classroom = () => {
   return (
     <>
       <div className="classroom">
