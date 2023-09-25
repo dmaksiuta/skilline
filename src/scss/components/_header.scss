@@ -60,6 +60,8 @@
       justify-content: center;
       transform: translateX(-120%);
       transition: var(--transition);
+      gap: 150px;
+
     }
 
     &._active {
@@ -85,6 +87,13 @@
     font-size: 22px;
     font-weight: 400;
     letter-spacing: 0.44px;
+
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-brand);
+    }
+
     @include desktop-small {
       font-size: 35px;
       font-weight: 500;
