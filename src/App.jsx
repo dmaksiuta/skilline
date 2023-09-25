@@ -3,6 +3,7 @@ import { Soft } from "./components/Soft";
 import { Classroom } from "./components/Classroom";
 import { Features } from "./components/Features";
 import { News } from "./components/News";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Classroom />
       <Features />
       <News />
+      <Footer />
     </>
   );
 }

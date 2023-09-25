@@ -1,0 +1,95 @@
+.footer {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background: #252641;
+  padding: 20px;
+  &__title {
+    margin-top: 74px;
+  }
+
+  &__logo {
+  }
+
+  &__desc {
+    margin-top: 95px;
+    color: #b2b3cf;
+    font-family: var(--ff);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__forms {
+    border-radius: 80px;
+    border: 1px solid #83839a;
+    background: transparent;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 258px;
+    padding-bottom: 15px;
+    max-width: 400px;
+    align-items: center;
+  }
+
+  &__btn {
+    border-radius: 60px;
+    background: linear-gradient(106deg, #545ae7 19.57%, #393fcf 78.85%);
+    color: #fff;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 34px;
+    padding-top: 14px;
+    padding-right: 34px;
+    padding-bottom: 13px;
+    cursor: pointer;
+  }
+
+  &__about {
+  }
+
+  &__info {
+  }
+
+  &__ul {
+    margin-top: 96px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__li {
+    color: #b2b3cf;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.88px;
+  }
+
+  &__copyright {
+    margin-top: 20px;
+    color: #b2b3cf;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+  }
+}
