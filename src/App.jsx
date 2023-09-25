@@ -1,6 +1,6 @@
 import { Welcome } from "./components/Welcome";
 import { Soft } from "./components/Soft";
-import { With } from "./components/With";
+import { Classroom } from "./components/Classroom";
 import { Features } from "./components/Features";
 import { News } from "./components/News";
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Welcome />
       <Soft />
-      <With />
+      <Classroom />
       <Features />
       <News />
     </>
