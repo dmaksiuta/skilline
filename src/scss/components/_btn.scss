@@ -15,12 +15,26 @@
   &._primary {
     color: var(--c-white);
     background: var(--c-accent);
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+    &:hover {
+      background: transparent;
+      border: 1px solid var(--c-accent);
+      color: var(--c-accent);
+    }
   }
 
   &._secondary {
     color: var(--c-btn-sec);
     background: var(--c-white);
     box-shadow: 0px 20px 24px 0px rgba(0, 0, 0, 0.03);
+
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--c-accent);
+    }
   }
 }
 
