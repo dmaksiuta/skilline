@@ -1,14 +1,19 @@
 .with {
   &__container {
     display: flex;
-    max-width: 1540px;
+    max-width: calc(1540px + 40px);
     margin-inline: auto;
     gap: 76px;
     align-items: center;
     justify-content: center;
-    padding: 20px 20px 21px 25px;
+    padding: 20px 40px 21px 45px;
     margin-bottom: 160px;
     margin-top: 160px;
+
+    @include desktop-small {
+      flex-direction: column;
+      padding: 0 180px;
+    }
   }
 
   &__info {
@@ -68,8 +73,8 @@
       background-color: #f4b767;
       top: 50%;
       transform: translateY(-50%);
-      right: 20px;
-      top: 90px;
+      right: -15px;
+      top: 100px;
     }
   }
 
