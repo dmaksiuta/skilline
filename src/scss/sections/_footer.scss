@@ -2,13 +2,16 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  background: #252641;
+  background: var(--c-text-head);
   padding: 20px;
   &__title {
     margin-top: 74px;
   }
 
   &__logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   &__desc {
@@ -45,7 +48,7 @@
   &__btn {
     border-radius: 60px;
     background: linear-gradient(106deg, #545ae7 19.57%, #393fcf 78.85%);
-    color: #fff;
+    color: var(--c-white);
     font-family: Poppins;
     font-size: 22px;
     font-style: normal;
@@ -62,18 +65,21 @@
   }
 
   &__info {
+    text-align: center;
   }
 
   &__ul {
     margin-top: 96px;
     display: flex;
     gap: 20px;
+    text-align: center;
+    margin-left: 50px;
   }
 
   &__li {
     color: #b2b3cf;
     text-align: center;
-    font-family: Poppins;
+    font-family: var(--ff);
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -91,5 +97,6 @@
     font-weight: 400;
     line-height: normal;
     margin-bottom: 40px;
+    margin-left: 10px;
   }
 }
