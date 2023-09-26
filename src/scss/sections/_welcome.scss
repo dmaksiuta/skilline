@@ -1,6 +1,6 @@
 .welcome {
   background: var(--c-welcome-bg);
-  min-height: 1118px;
+  min-height: 1118rem;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 50rem;
 
     @include desktop {
       display: grid;
@@ -30,19 +30,19 @@
 
   &__info {
     flex-shrink: 0;
-    max-width: 681px;
-    padding-left: 40px;
+    max-width: 681rem;
+    padding-left: 40rem;
     @include desktop {
-      margin-top: 100px;
+      margin-top: 100rem;
       margin-inline: auto;
     }
   }
 
   &__title {
     color: var(--c-primary);
-    font-size: 54px;
+    font-size: 54rem;
     font-weight: 700;
-    margin-bottom: 34px;
+    margin-bottom: 34rem;
     span {
       color: var(--c-accent);
     }
@@ -51,21 +51,21 @@
   &__desc {
     color: var(--c-text-add);
     font-family: var(--ff-second);
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 400;
     line-height: 160%;
-    margin-bottom: 52px;
+    margin-bottom: 52rem;
   }
 
   &__btn {
     .btn._primary {
-      padding: 22px 38px;
-      font-size: 24px;
+      padding: 22rem 38rem;
+      font-size: 24rem;
       font-weight: 600;
     }
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 40rem;
   }
 
   &__image {
@@ -80,7 +80,7 @@
   &__wawe {
     z-index: 10;
     position: absolute;
-    bottom: -250px;
+    bottom: -250rem;
     width: 100%;
 
     @include desktop-small {

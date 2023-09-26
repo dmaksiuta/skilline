@@ -3,11 +3,11 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 20rem;
 
   &__logo {
-    width: 150px;
-    height: 83px;
+    width: 150rem;
+    height: 83rem;
   }
 
   &__backdrop {
@@ -37,15 +37,15 @@
     display: flex;
     align-items: center;
     @include desktop-small {
-      gap: 100px;
+      gap: 100rem;
     }
   }
 
   &__ul {
     display: flex;
     align-items: center;
-    gap: 80px;
-    margin-right: 80px;
+    gap: 80rem;
+    margin-right: 80rem;
 
     @include desktop-small {
       z-index: 9999;
@@ -60,7 +60,7 @@
       justify-content: center;
       transform: translateX(-120%);
       transition: var(--transition);
-      gap: 150px;
+      gap: 150rem;
 
     }
 
@@ -70,8 +70,8 @@
 
     .icon-close {
       position: absolute;
-      top: 40px;
-      right: 40px;
+      top: 40rem;
+      right: 40rem;
       color: var(--c-text-white);
     }
   }
@@ -79,14 +79,14 @@
   &__btn {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 34rem;
   }
 
   &__a {
     color: var(--c-text-head);
-    font-size: 22px;
+    font-size: 22rem;
     font-weight: 400;
-    letter-spacing: 0.44px;
+    letter-spacing: 0.44rem;
 
     transition: var(--transition);
 
@@ -95,7 +95,7 @@
     }
 
     @include desktop-small {
-      font-size: 35px;
+      font-size: 35rem;
       font-weight: 500;
       color: var(--c-text-white);
     }
@@ -107,7 +107,7 @@
   cursor: pointer;
   display: none;
   transition: opacity 0.6s;
-  font-size: 70px;
+  font-size: 70rem;
   font-weight: 600;
 
   @include desktop-small {
@@ -122,7 +122,7 @@
   }
 }
 .icon-menu {
-  padding-right: 25px;
+  padding-right: 25rem;
 }
 .no-scroll {
   overflow: hidden;

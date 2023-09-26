@@ -4,7 +4,7 @@
   }
 
   &__head {
-    margin-bottom: 84px;
+    margin-bottom: 84rem;
   }
 
   &__title {
@@ -20,11 +20,11 @@
     color: var(--c-text-primary);
     text-align: center;
     font-family: var(--ff);
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 400;
     line-height: 180%;
     @include tablet {
-      max-width: 500px;
+      max-width: 500rem;
       margin-inline: auto;
     }
   }
@@ -34,25 +34,35 @@
     justify-content: center;
     align-items: center;
     @include desktop-small {
-      gap: 30px;
+      gap: 30rem;
     }
 
     &._block-tools {
-      margin-bottom: 160px;
+      margin-bottom: 160rem;
       @include desktop-small {
         display: grid;
       }
     }
 
     &._block-quizzes {
-      margin-bottom: 167px;
+      margin-bottom: 167rem;
       @include desktop-small {
         flex-direction: column-reverse;
       }
     }
 
     &._block-management {
-      margin-bottom: 180px;
+      margin-bottom: 180rem;
+      @include tablet {
+        margin-bottom: 75rem;
+      }
+
+      @include tablet {
+        margin-bottom: 75rem;
+        @include tablet {
+          margin-bottom: 75rem;
+        }
+      }
 
       @include desktop-small {
         display: grid;
@@ -60,7 +70,10 @@
     }
 
     &._block-discussion {
-      margin-bottom: 106px;
+      margin-bottom: 106rem;
+      @include tablet {
+        margin-bottom: 75rem;
+      }
 
       @include desktop-small {
         flex-direction: column-reverse;
@@ -70,7 +83,7 @@
 
   &__info {
     &._info-quizzes {
-      padding-bottom: 113px;
+      padding-bottom: 113rem;
 
       @include desktop-small {
         text-align: center;
@@ -80,13 +93,13 @@
 
   &__title-block {
     font-family: var(--ff);
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: 600;
     line-height: 160%;
     color: var(--c-primary);
 
     &._title-tools {
-      max-width: 393px;
+      max-width: 393rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -94,7 +107,7 @@
     }
 
     &._title-quizzes {
-      max-width: 347px;
+      max-width: 347rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -102,7 +115,7 @@
     }
 
     &._title-management {
-      max-width: 421px;
+      max-width: 421rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -110,7 +123,7 @@
     }
 
     &._title-discussion {
-      max-width: 274px;
+      max-width: 274rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -121,13 +134,13 @@
   &__desc-block {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.44px;
+    letter-spacing: 0.44rem;
 
     &._desc-tools {
-      max-width: 568px;
+      max-width: 568rem;
 
       @include desktop-small {
         margin-inline: auto;
@@ -136,7 +149,7 @@
     }
 
     &._desc-quizzes {
-      max-width: 596px;
+      max-width: 596rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -144,7 +157,7 @@
     }
 
     &._desc-management {
-      max-width: 646px;
+      max-width: 646rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -152,7 +165,7 @@
     }
 
     &._desc-discussion {
-      max-width: 540px;
+      max-width: 540rem;
       @include desktop-small {
         margin-inline: auto;
         text-align: center;
@@ -162,36 +175,36 @@
 
   //   image-features
   &__tools-img {
-    max-width: 637.196px;
-    max-height: 611px;
-    margin-left: 236px;
+    max-width: 637.196rem;
+    max-height: 611rem;
+    margin-left: 236rem;
     @include desktop-small {
       margin-left: 0;
     }
   }
 
   &__quizzes-img {
-    max-width: 617px;
-    max-height: 651.49px;
-    margin-right: 248px;
+    max-width: 617rem;
+    max-height: 651.49rem;
+    margin-right: 248rem;
     @include desktop-small {
       margin-right: 0;
     }
   }
 
   &__management-img {
-    max-width: 808.321px;
-    max-height: 560px;
-    margin-left: 94px;
+    max-width: 808.321rem;
+    max-height: 560rem;
+    margin-left: 94rem;
     @include desktop-small {
       margin-left: 0;
     }
   }
 
   &__discussion-img {
-    max-width: 755.241px;
-    max-height: 499px;
-    margin-right: 191px;
+    max-width: 755.241rem;
+    max-height: 499rem;
+    margin-right: 191rem;
     @include desktop-small {
       margin-right: 0;
     }
@@ -203,13 +216,13 @@
 
     ._features {
       border: 1px solid var(--c-accent);
-      padding: 19px 38px;
+      padding: 19rem 38rem;
       color: var(--c-accent);
       font-family: var(--ff-second);
-      font-size: 24px;
+      font-size: 24rem;
       font-weight: 400;
       line-height: 180%;
-      letter-spacing: 0.48px;
+      letter-spacing: 0.48rem;
       transition: var(--transition);
 
       &:hover {

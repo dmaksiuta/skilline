@@ -1,11 +1,11 @@
 .soft {
-  margin-top: 116px;
+  margin-top: 116rem;
 
   &__title {
     text-align: center;
     color: var(--c-accent);
     font-family: var(--ff);
-    font-size: 36px;
+    font-size: 36rem;
     font-weight: 700;
     line-height: 180%;
     span {
@@ -14,20 +14,20 @@
   }
 
   &__desc {
-    max-width: 837px;
+    max-width: 837rem;
     margin: 0 auto;
     color: var(--c-text-primary);
     text-align: center;
     font-family: var(--ff);
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 400;
     line-height: 180%;
-    margin-bottom: 163px;
+    margin-bottom: 163rem;
   }
 
   &__info {
     display: flex;
-    gap: 60px;
+    gap: 60rem;
 
     @include desktop-small {
       display: grid;
@@ -40,23 +40,23 @@
   &__online,
   &__ease,
   &__customer {
-    max-width: 450px;
+    max-width: 450rem;
     border-radius: 20px;
     background: var(--c-text-white);
-    box-shadow: 0px 10px 60px 0px rgba(38, 45, 118, 0.08);
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    box-shadow: 0rem 10rem 60rem 0rem rgba(38, 45, 118, 0.08);
+    padding-left: 50rem;
+    padding-right: 50rem;
+    padding-bottom: 50rem;
   }
 
   &__online-image,
   &__ease-image,
   &__customer-image {
-    width: 120px;
-    height: 100px;
+    width: 120rem;
+    height: 100rem;
     margin: 0 auto;
     position: relative;
-    top: -55px;
+    top: -55rem;
     object-fit: cover;
   }
 
@@ -66,9 +66,9 @@
     color: var(--c-primary);
     text-align: center;
     font-family: var(--ff);
-    font-size: 30px;
+    font-size: 30rem;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin-bottom: 24rem;
   }
 
   &__online-text,
@@ -77,24 +77,24 @@
     color: var(--c-text-primary);
     text-align: center;
     font-family: var(--ff);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 400;
     line-height: 180%;
   }
 
   &__ease {
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 36rem;
+    padding-right: 36rem;
   }
 
   &__customer {
-    padding-left: 66px;
-    padding-right: 66px;
+    padding-left: 66rem;
+    padding-right: 66rem;
   }
   &__customer-image {
-    margin-bottom: 55px;
+    margin-bottom: 55rem;
   }
   &__customer-title {
-    margin-bottom: 42px;
+    margin-bottom: 42rem;
   }
 }

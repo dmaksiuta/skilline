@@ -3,9 +3,9 @@
   align-items: center;
   display: grid;
   background: var(--c-text-head);
-  padding: 20px;
+  padding: 20rem;
   &__title {
-    margin-top: 74px;
+    margin-top: 74rem;
   }
 
   &__logo {
@@ -15,33 +15,33 @@
   }
 
   &__desc {
-    margin-top: 95px;
-    color: #b2b3cf;
+    margin-top: 95rem;
+    color: var(--c-text-footer);
     font-family: var(--ff);
-    font-size: 26px;
+    font-size: 26rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 1.04px;
-    margin-bottom: 20px;
+    letter-spacing: 1.04rem;
+    margin-bottom: 20rem;
     text-align: center;
   }
 
   &__contact {
     display: flex;
-    gap: 20px;
+    gap: 20rem;
     align-items: center;
   }
 
   &__forms {
     border-radius: 80px;
-    border: 1px solid #83839a;
+    border: 1rem solid var(--c-border-input);
     background: transparent;
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-right: 258px;
-    padding-bottom: 15px;
-    max-width: 400px;
+    padding-left: 30rem;
+    padding-top: 15rem;
+    padding-right: 258rem;
+    padding-bottom: 15rem;
+    max-width: 400rem;
     align-items: center;
   }
 
@@ -50,18 +50,15 @@
     background: linear-gradient(106deg, #545ae7 19.57%, #393fcf 78.85%);
     color: var(--c-white);
     font-family: Poppins;
-    font-size: 22px;
+    font-size: 22rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding-left: 34px;
-    padding-top: 14px;
-    padding-right: 34px;
-    padding-bottom: 13px;
+    padding-left: 34rem;
+    padding-top: 14rem;
+    padding-right: 34rem;
+    padding-bottom: 13rem;
     cursor: pointer;
-  }
-
-  &__about {
   }
 
   &__info {
@@ -69,34 +66,34 @@
   }
 
   &__ul {
-    margin-top: 96px;
+    margin-top: 96rem;
     display: flex;
-    gap: 20px;
+    gap: 20rem;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 50rem;
   }
 
   &__li {
-    color: #b2b3cf;
+    color: var(--c-text-footer);
     text-align: center;
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.88px;
+    letter-spacing: 0.88rem;
   }
 
   &__copyright {
-    margin-top: 20px;
-    color: #b2b3cf;
+    margin-top: 20rem;
+    color: var(--c-text-footer);
     text-align: center;
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 40px;
-    margin-left: 10px;
+    margin-bottom: 40rem;
+    margin-left: 10rem;
   }
 }

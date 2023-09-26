@@ -1,30 +1,36 @@
 .news {
-  padding: 150px 37px 237px 100px;
+  margin-top: 150rem;
+  margin-bottom: 237rem;
+
+  @include tablet {
+    margin-top: 0rem;
+    margin-bottom: 170rem;
+  }
 
   &__title {
     color: var(--c-primary);
     text-align: center;
     font-family: var(--ff-second);
-    font-size: 36px;
+    font-size: 36rem;
     font-weight: 700;
     line-height: 180%;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
   }
 
   &__desc {
     color: var(--c-text-primary);
     text-align: center;
     font-family: var(--ff-second);
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 400;
     line-height: 180%;
-    margin-bottom: 100px;
+    margin-bottom: 100rem;
   }
 
   &__info {
     display: flex;
     align-items: flex-start;
-    gap: 120px;
+    gap: 120rem;
 
     @include desktop-small {
       display: grid;
@@ -33,7 +39,7 @@
   }
 
   &__main-news {
-    max-width: 640px;
+    max-width: 640rem;
 
     @include desktop-small {
       margin-inline: auto;
@@ -45,30 +51,30 @@
   }
 
   &__title-icon {
-    max-width: 130px;
-    padding: 2px 35px;
+    max-width: 130rem;
+    padding: 2rem 35rem;
     border-radius: 80px;
     background: var(--c-accent);
     color: #252641;
     font-family: var(--ff);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 500;
     line-height: 180%;
-    letter-spacing: 0.4px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    letter-spacing: 0.4rem;
+    margin-top: 40rem;
+    margin-bottom: 20rem;
   }
 
   &__box {
-    max-width: 800px;
+    max-width: 800rem;
     display: grid;
-    gap: 50px;
+    gap: 50rem;
   }
 
   &__item {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
+    gap: 40rem;
   }
 }
 
@@ -76,30 +82,30 @@
   &__title {
     color: var(--c-text-head);
     font-family: var(--ff);
-    font-size: 26px;
+    font-size: 26rem;
     font-weight: 500;
     line-height: 180%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
   }
 
   &__decs {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.4px;
-    margin-bottom: 28px;
+    letter-spacing: 0.4rem;
+    margin-bottom: 28rem;
   }
 
   &__more {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.4rem;
     text-decoration-line: underline;
   }
 }
@@ -107,26 +113,26 @@
 .item {
   &__img {
     border-radius: 20px;
-    width: 280px;
-    height: 200px;
+    width: 280rem;
+    height: 200rem;
   }
 
   &__title {
-    max-width: 480px;
+    max-width: 480rem;
     color: var(--c-text-head);
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-weight: 500;
     line-height: 180%;
-    margin-bottom: 20px;
+    margin-bottom: 20rem;
   }
 
   &__decs {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 20px;
+    font-size: 20rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.4rem;
   }
 }

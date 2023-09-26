@@ -1,127 +1,99 @@
-.classroom {
-  &__container {
-    display: flex;
-    max-width: calc(1540px + 40px);
+.section-classroom {
+  display: flex;
+  margin-inline: auto;
+  gap: 76rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 160rem;
+  margin-top: 160rem;
+
+  @include desktop {
+    flex-direction: column;
+    max-width: 1000rem;
     margin-inline: auto;
-    gap: 76px;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 40px 21px 45px;
-    margin-bottom: 160px;
-    margin-top: 160px;
-
-    @include desktop-small {
-      flex-direction: column;
-      padding: 0 180px;
-    }
-
-    @include desktop-small {
-      padding: 0 60px;
-    }
-    @include mobile {
-      padding: 0 30px;
-    }
   }
 
+
+  @include tablet {
+    max-width: 700rem;
+    margin-top: 90rem;
+    margin-bottom: 20rem;
+    margin-top: 60rem;
+
+  }
   &__title {
     color: var(--c-primary);
     font-family: var(--ff);
-    font-size: 36px;
+    font-size: 36rem;
     font-weight: 500;
     line-height: 160%;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
     position: relative;
-    @include tablet-small {
-      font-size: 26px;
-    }
 
     &::before {
       z-index: -1;
       content: "";
       position: absolute;
-      width: 73px;
-      height: 73px;
+      width: 73rem;
+      height: 73rem;
       border-radius: 50%;
-      background-color: #f4b767;
+      background-color: var(--c-before-accent);
       left: 50%;
       transform: translateX(-50%);
-      top: -12px;
-      left: 14px;
-
-      @include tablet-small {
-        width: 50px;
-        height: 50px;
-      }
+      top: -12rem;
+      left: 14rem;
     }
   }
 
   &__span {
     color: var(--c-accent);
     font-family: var(--ff);
-    font-size: 36px;
+    font-size: 36rem;
     font-weight: 500;
     line-height: 160%;
-    @include tablet-small {
-      font-size: 26px;
-    }
   }
 
   &__desc {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.48px;
-    margin-bottom: 30px;
-    margin-top: 0;
+    letter-spacing: 0.48rem;
+    margin-bottom: 30rem;
     position: relative;
-    @include tablet-small {
-      font-size: 18px;
-    }
 
     &::before {
       z-index: -1;
       content: "";
       position: absolute;
-      width: 30px;
-      height: 30px;
+      width: 30rem;
+      height: 30rem;
       border-radius: 50%;
-      background-color: #f4b767;
+      background-color: var(--c-before-accent);
       top: 50%;
       transform: translateY(-50%);
-      right: -25px;
-      top: 100px;
-      @include tablet-small {
-        width: 22px;
-        height: 22px;
-      }
+      right: -25rem;
+      top: 100rem;
     }
   }
 
   &__a {
     color: var(--c-text-primary);
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-weight: 400;
     line-height: 180%;
     text-decoration-line: underline;
-    @include tablet-small {
-      font-size: 18px;
-    }
   }
 
   &__img {
     position: relative;
-    border-radius: 20px;
+    border-radius: 20rem;
     object-fit: cover;
   }
   &__avatar {
-    min-width: 705px;
-    @include tablet-small {
-      min-width: 0;
-    }
+    min-width: 705rem;
   }
 
   &__border {
@@ -132,14 +104,14 @@
     &::before {
       content: "";
       position: absolute;
-      width: 138px;
-      height: 138px;
-      border-radius: 20px;
-      background: #23bdee;
+      width: 138rem;
+      height: 138rem;
+      border-radius: 20rem;
+      background: var(--c-after-brand);
       top: 50%;
       transform: translateY(-50%);
-      top: 50px;
-      left: -20px;
+      top: 50rem;
+      left: -20rem;
       @include tablet {
         display: none;
       }
@@ -147,14 +119,14 @@
     &::after {
       content: "";
       position: absolute;
-      width: 231px;
-      height: 231px;
-      border-radius: 20px;
-      background: #f3ac50;
+      width: 231rem;
+      height: 231rem;
+      border-radius: 20rem;
+      background: var(--c-after-accent);
       top: 50%;
       transform: translateY(-50%);
-      top: 380px;
-      left: 495px;
+      top: 380rem;
+      left: 495rem;
     }
     @include tablet {
       display: none;
