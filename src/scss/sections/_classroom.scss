@@ -13,13 +13,11 @@
     margin-inline: auto;
   }
 
-
   @include tablet {
     max-width: 700rem;
     margin-top: 90rem;
     margin-bottom: 20rem;
     margin-top: 60rem;
-
   }
   &__title {
     color: var(--c-primary);

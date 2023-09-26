@@ -7,7 +7,7 @@ export const Features = () => {
   return (
     <>
       <section className="section-features container">
-        <div className="section-features__head">
+        <div data-aos="zoom-in-up" className="section-features__head">
           <h2 className="section-features__title">
             Our <span className="span">Features</span>
           </h2>
@@ -17,7 +17,10 @@ export const Features = () => {
           </p>
         </div>
         <div className="section-features__blocks">
-          <div className="section-features__block _block-tools">
+          <div
+            data-aos="zoom-out-up"
+            className="section-features__block _block-tools"
+          >
             <div className="section-features__info _info-tools">
               <h3 className="section-features__title-block _title-tools">
                 <span className="span">Tools</span> For Teachers And Learners
@@ -35,7 +38,10 @@ export const Features = () => {
             />
           </div>
 
-          <div className="section-features__block _block-quizzes">
+          <div
+            data-aos="zoom-out-down"
+            className="section-features__block _block-quizzes"
+          >
             <img
               src={quizzes}
               alt="quizzes-img"
@@ -52,7 +58,10 @@ export const Features = () => {
             </div>
           </div>
 
-          <div className="section-features__block _block-management">
+          <div
+            data-aos="zoom-out-up"
+            className="section-features__block _block-management"
+          >
             <div className="section-features__info _info-management">
               <h3 className="section-features__title-block _title-management">
                 <span className="span">Class Management</span> Tools for
@@ -71,7 +80,10 @@ export const Features = () => {
             />
           </div>
 
-          <div className="section-features__block _block-discussion">
+          <div
+            data-aos="zoom-out-down"
+            className="section-features__block _block-discussion"
+          >
             <img
               src={discussion}
               alt="discussion-img"
@@ -88,7 +100,11 @@ export const Features = () => {
             </div>
           </div>
         </div>
-        <div className="section-features__btn">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          className="section-features__btn"
+        >
           <a className="btn _features" href="/">
             See more features
           </a>

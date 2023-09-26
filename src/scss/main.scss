@@ -3,6 +3,7 @@
 
 // utils
 @import "utils/vars";
+@import "utils/animations";
 @import "utils/mixins";
 
 // layout
@@ -11,13 +12,20 @@
 @import "layout/grid";
 
 // components
-@import "components/btn";
 @import "components/header";
+@import "components/footer";
+
+// & UI
+@import "components/UI/btn";
+
+
 
 // sections
 @import "sections/welcome";
 @import "sections/soft";
+@import "sections/skilline";
 @import "sections/classroom";
 @import "sections/futures";
 @import "sections/news";
-@import "sections/footer";
+
+

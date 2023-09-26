@@ -10,7 +10,7 @@ export const Header = () => {
 
   return (
     <header className="header container">
-      <a href="/" className="header__logo">
+      <a data-aos="fade-up-right" href="/" className="header__logo">
         <img src={logo} alt="Skilline" />
       </a>
       <nav className="header__nav">
@@ -26,28 +26,28 @@ export const Header = () => {
           >
             close
           </span>
-          <li className="header__li">
+          <li data-aos="flip-left" className="header__li">
             <a href="/" className="header__a">
               Home
             </a>
           </li>
-          <li className="header__li">
+          <li data-aos="flip-left" className="header__li">
             <a href="/" className="header__a">
               Careers
             </a>
           </li>
-          <li className="header__li">
+          <li data-aos="flip-left" className="header__li">
             <a href="/" className="header__a">
               Blog
             </a>
           </li>
-          <li className="header__li">
+          <li data-aos="flip-left" className="header__li">
             <a href="/" className="header__a">
               About Us
             </a>
           </li>
         </ul>
-        <div className="header__btn">
+        <div data-aos="fade-down" className="header__btn">
           <a className="btn _secondary" href="/">
             Login
           </a>

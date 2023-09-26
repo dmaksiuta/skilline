@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import { Header } from "../components/Header";
 import playImage from "../assets/play.svg";
 import welcome from "../assets/welcome.svg";
 import wawe from "../assets/wawe.svg";
@@ -10,7 +10,7 @@ export const Welcome = () => {
         <Header />
         <div className="container welcome__container">
           <div className="welcome__content">
-            <div className="welcome__info">
+            <div className="welcome__info text-focus-in">
               <h1 className="welcome__title">
                 <span> Studying </span>
                 Online is now much easier
@@ -20,7 +20,7 @@ export const Welcome = () => {
                 an interactive way
               </p>
               <div className="welcome__btn">
-                <a className="btn _primary" href="/">
+                <a className="btn _primary rotate-center" href="/">
                   Join for free
                 </a>
                 <a href="/" className="btn-watch">
@@ -29,8 +29,8 @@ export const Welcome = () => {
                 </a>
               </div>
             </div>
-            <div className="welcome__image">
-              <img src={welcome} alt="" />
+            <div className="welcome__image puff-in-center">
+              <img src={welcome} alt="welcome-girl" />
             </div>
           </div>
         </div>
