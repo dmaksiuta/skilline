@@ -4,31 +4,27 @@ import team from "../assets/skilline/team.png";
 export const Skilline = () => {
   return (
     <section className="section-skilline container ">
-      <div className="section-skilline__text ">
-        <div className="section-skilline__main-title">
+      <div data-aos="zoom-in" className="section-skilline__text ">
+        <h2 className="section-skilline__main-title">
           What is <span className="section-skilline__span">Skilline?</span>
-        </div>
+        </h2>
 
-        <div className="section-skilline__desc">
+        <p className="section-skilline__desc">
           Skilline is a platform that allows educators to create online classes
           whereby they can store the course materials online; manage
           assignments, quizzes and exams; monitor due dates; grade results and
           provide students with feedback all in one place.
-        </div>
+        </p>
       </div>
 
-      {/* photo */}
-
       <div className="section-skilline__photo container">
-        {/* number 1 */}
-        <div className="section-skilline__photo-girl">
+        <div data-aos="flip-up" className="section-skilline__photo-girl">
           <div className="section-skilline__bg-girl">
             <img className="girl" src={girl} alt="girl" />
-            <div className="section-skilline__bg-blue"></div>
           </div>
 
           <div className="section-skilline__girl-text">
-            <div className="section-skilline__title-girl">FOR INSTRUCTORS</div>
+            <h4 className="section-skilline__title-girl">FOR INSTRUCTORS</h4>
 
             <div className="section-skilline__girl-btn">
               <a href="/" className="section-skilline__link">
@@ -38,16 +34,13 @@ export const Skilline = () => {
           </div>
         </div>
 
-        {/* number 2 */}
-
-        <div className="section-skilline__photo-team">
+        <div data-aos="flip-up" className="section-skilline__photo-team">
           <div className="section-skilline__bg-girl">
             <img className="team" src={team} alt="girl" />
-            <div className="section-skilline__team-blue"></div>
           </div>
 
           <div className="section-skilline__girl-text">
-            <div className="section-skilline__title-team  ">FOR STUDENTS</div>
+            <h4 className="section-skilline__title-team">FOR STUDENTS</h4>
 
             <div className="section-skilline__team-btn">
               <a href="/" className="section-skilline__team-link">

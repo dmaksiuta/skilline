@@ -1,43 +1,26 @@
 .section-skilline {
+  margin-top: 158rem;
+
   &__text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include desktop-small {
-      max-width: 850px;
-      margin-left: 50px;
-    }
-
-    @include tablet {
-      max-width: 700px;
-    }
-
-    @include tablet-small {
-      max-width: 500px;
-      margin-left: 100px;
-    }
-
-    @include mobile {
-      max-width: 300px;
-      margin-left: 0;
-    }
   }
 
   &__main-title {
-    color: #2f327d;
-
+    color: var(--c-primary);
     font-family: var(--ff);
-    font-size: 44px;
+    font-size: 44rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 180%; /* 79.2px */
+    line-height: 180%;
   }
 
   &__span {
     color: var(--c-accent);
     font-family: var(--ff);
-    font-size: 44px;
+    font-size: 44rem;
 
     font-weight: 600;
     line-height: 180%;
@@ -45,19 +28,21 @@
 
   &__desc {
     color: var(--c-text-primary);
-
     font-family: var(--ff);
-    font-size: 24px;
-
+    font-size: 24rem;
     font-weight: 400;
     line-height: 180%;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.48rem;
     text-align: center;
-    max-width: 1101px;
-    margin-bottom: 80px;
+    max-width: 1101rem;
+    margin-bottom: 80rem;
 
-    @include mobile {
-      text-align: left;
+    @include desktop {
+      max-width: 850rem;
+    }
+
+    @include tablet {
+      max-width: 700rem;
     }
   }
 
@@ -65,29 +50,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 100rem;
 
-    @include desktop-small {
-      display: flex;
-
-      flex-direction: column-reverse;
-    }
-
-    @include tablet {
-      align-items: flex-start;
-      justify-content: flex-start;
-      margin-left: 100px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    @include tablet-small {
-      margin-left: 0;
-    }
-
-    @include mobile {
-      display: flex;
-      gap: 80px;
+    @include desktop {
+      display: grid;
     }
   }
 
@@ -99,181 +65,103 @@
     position: relative;
   }
 
-  //   text
-
   &__title-girl {
-    color: #fff;
+    color: var(--c-white);
     text-align: center;
     font-family: var(--ff);
-    font-size: 32px;
+    font-size: 32rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
     position: absolute;
-    top: 132px;
-    left: 153px;
-
-    @include mobile {
-      font-size: 12px;
-
-      position: absolute;
-      top: 70px;
-      left: 100px;
-    }
+    top: 132rem;
+    left: 153rem;
   }
 
   &__link {
-    color: #fff;
+    color: var(--c-white);
     text-align: center;
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    padding: 24px 38px 23px 37px;
-    border-radius: 80px;
-    border: 1px solid #fff;
-
+    padding: 24rem 38rem 23rem 37rem;
+    border-radius: 80rem;
+    border: 1px solid var(--c-white);
     position: absolute;
-    top: 197px;
-    right: 160px;
+    top: 197rem;
+    right: 160rem;
+    transition: var(--transition);
 
     &:hover {
-      background: #f4b767;
-      border: 0;
-      border: 0px solid #fff;
-      transition: var(--transition);
-    }
-
-    @include mobile {
-      font-size: 10px;
-      padding: 12px 16px 11px 25px;
-      right: 80px;
-      top: 120px;
+      background: rgba(35, 189, 238, 0.9);
     }
   }
 
   &__title-team {
-    color: #fff;
+    color: var(--c-white);
     text-align: center;
     font-family: var(--ff);
-    font-size: 32px;
+    font-size: 32rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
     position: absolute;
-    top: 135px;
-    right: 184px;
-
-    @include mobile {
-      font-size: 12px;
-
-      position: absolute;
-      top: 70px;
-      right: 100px;
-    }
+    top: 135rem;
+    right: 184rem;
   }
 
   &__team-link {
-    color: #fff;
+    color: var(--c-white);
     text-align: center;
     font-family: var(--ff);
-    font-size: 22px;
+    font-size: 22rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-
-    border-radius: 80px;
+    border-radius: 80rem;
     background: rgba(35, 189, 238, 0.9);
-    padding: 24px 41px 23px 40px;
-
+    padding: 24rem 41rem 23rem 40rem;
     position: absolute;
-    top: 200px;
-
-    left: 159px;
+    top: 200rem;
+    left: 159rem;
+    transition: var(--transition);
+    border: 1px solid transparent;
 
     &:hover {
-      background: blue;
-      transition: var(--transition);
-    }
-
-    @include mobile {
-      font-size: 10px;
-      padding: 12px 16px;
-
-      position: absolute;
-      left: 100px;
-      top: 120px;
-    }
-  }
-
-  // background
-
-  &__bg-girl {
-    border-radius: 20px;
-    background: #c4c4c4;
-
-    @include mobile {
-      width: 302px;
-      height: 200px;
-      background: none;
+      border: 1px solid var(--c-white);
+      background: var(--c-primary);
     }
   }
 
   &__bg-blue {
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
+    border-radius: 20rem;
+    width: 600rem;
+    height: 400rem;
     position: absolute;
     top: 0%;
-    border-radius: 20px;
-    opacity: 0.6;
-    background: rgba(23, 27, 65, 0.45);
-
-    @include mobile {
-      width: 302px;
-      height: 200px;
-      background: rgba(23, 27, 65, 0.45);
-    }
+    border-radius: 20rem;
   }
 
   &__team-blue {
-    border-radius: 20px;
-    width: 600px;
-    height: 400px;
+    border-radius: 20rem;
+    width: 600rem;
+    height: 400rem;
     position: absolute;
     top: 0%;
-    border-radius: 20px;
+    border-radius: 20rem;
     opacity: 0.6;
     background: rgba(23, 27, 65, 0.45);
-
-    @include mobile {
-      background: none;
-    }
   }
 }
 
-// img
-
 .girl {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  @include mobile {
-    width: 302px;
-    height: 200px;
-  }
+  width: 600rem;
+  height: 400rem;
 }
 
 .team {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  @include mobile {
-    width: 302px;
-    height: 200px;
-  }
+  width: 600rem;
+  height: 400rem;
 }
