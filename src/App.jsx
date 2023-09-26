@@ -2,6 +2,7 @@ import { Welcome } from "./components/Welcome";
 import { Soft } from "./components/Soft";
 import { Classroom } from "./components/Classroom";
 import { Features } from "./components/Features";
+import { Say } from "./components/Say";
 import { News } from "./components/News";
 import { Footer } from "./components/footer";
 
@@ -12,6 +13,7 @@ function App() {
       <Soft />
       <Classroom />
       <Features />
+      <Say />
       <News />
       <Footer />
     </>

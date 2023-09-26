@@ -1,0 +1,246 @@
+.say {
+  margin-top: 158rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50rem;
+  padding-left: 100rem;
+  @include desktop-small {
+    flex-direction: column;
+    padding-left: 50rem;
+  }
+
+  &__info {
+    max-width: 607rem;
+    @include desktop-small {
+      margin: 0 auto;
+    }
+  }
+  &__info-span {
+    width: 80rem;
+    height: 1rem;
+    background: var(--c-text-say);
+  }
+  &__info-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 30rem;
+    margin: 0;
+    color: var(--c-text-say);
+    font-family: var(--ff-second);
+    font-size: 20rem;
+    font-weight: 400;
+    letter-spacing: 4rem;
+    margin-bottom: 32rem;
+  }
+
+  &__info-title {
+    color: var(--c-primary);
+    font-family: var(--ff-second);
+    font-size: 60rem;
+    font-weight: 700;
+    margin-bottom: 29rem;
+    @include mobile {
+      font-size: 40rem;
+    }
+  }
+
+  &__info-desc,
+  &__info-text {
+    color: var(--c-text-primary);
+    font-family: var(--ff);
+    font-size: 26rem;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.52rem;
+    margin-bottom: 26rem;
+    @include mobile {
+      font-size: 20rem;
+    }
+  }
+
+  &__info-text {
+    margin-top: 46rem;
+    margin-bottom: 43rem;
+  }
+
+  &__about-image {
+    display: flex;
+    align-items: center;
+    margin-right: 200rem;
+    @include desktop-small {
+      margin-top: 50rem;
+    }
+    @include tablet-small {
+      margin-right: 0;
+    }
+  }
+  &__about-border {
+    max-width: 720rem;
+    border-radius: 20px 0px 0px 20px;
+    border: 14rem solid var(--c-border-item);
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 0;
+    position: relative;
+    left: 69rem;
+    top: -200rem;
+  }
+  &__about-item {
+    border-radius: 0 20px 20px 0;
+    background: var(--c-white);
+    box-shadow: 2rem 4rem 60rem 0rem rgba(41, 44, 124, 0.1);
+    padding-top: 41rem;
+    margin-right: 67rem;
+    @include tablet-small {
+      margin-right: 30rem;
+    }
+  }
+
+  &__about-text {
+    color: var(--c-text-item);
+    font-family: var(--ff-second);
+    font-size: 22rem;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 0.44rem;
+
+    border-left: 1rem solid #bdbdd1;
+    padding-left: 32rem;
+    margin-right: 59rem;
+    margin-left: 55rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include tablet-small {
+      padding-left: 20rem;
+      margin-left: 15rem;
+      margin-right: 30rem;
+    }
+    @include mobile {
+      font-size: 18rem;
+    }
+  }
+
+  &__about-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 42rem 0rem 90rem;
+    @include tablet-small {
+      padding: 0 20rem 0 35rem;
+    }
+  }
+
+  &__about-name {
+    color: var(--c-text-item);
+    font-family: var(--ff-second);
+    font-size: 24rem;
+    font-weight: 600;
+    line-height: 180%;
+    @include mobile {
+      font-size: 20rem;
+    }
+  }
+
+  &__about-mark {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+  }
+
+  &__about-span {
+    color: var(--c-text-mark);
+    font-family: var(--ff-second);
+    font-size: 18rem;
+    font-weight: 600;
+    line-height: 180%;
+    letter-spacing: 0.36rem;
+    @include mobile {
+      font-size: 16rem;
+    }
+  }
+  ._arrow {
+    position: relative;
+    cursor: pointer;
+    right: 263rem;
+    max-width: 150rem;
+    max-height: 150rem;
+    @include tablet-small {
+      display: none;
+    }
+  }
+  ._student {
+    object-fit: cover;
+    flex-shrink: 0;
+    @include tablet-small {
+      max-width: 100%;
+    }
+  }
+}
+.btn-asse {
+  max-width: 403px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 0 0 0 38px;
+  white-space: nowrap;
+  transition: var(--transition);
+
+  @include desktop-small {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background: var(--c-bg-btn);
+    color: var(--c-primary);
+    outline: 0;
+
+    svg {
+      transition: var(--transition);
+
+      circle {
+        stroke: var(--c-primary);
+      }
+
+      path {
+        fill: var(--c-primary);
+      }
+    }
+  }
+
+  @include mobile {
+    max-width: 300px;
+    gap: 30px;
+    padding: 0 0 0 20px;
+  }
+
+  &__icon {
+    height: 72px;
+    width: 80px;
+
+    @include mobile {
+      width: 60px;
+      height: 57px;
+    }
+  }
+}
+
+._say {
+  border-radius: 80px;
+  border: 1px solid var(--c-accent);
+  color: var(--c-accent);
+  font-family: var(--ff);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.44px;
+
+  &:hover {
+    border: 1px solid var(--c-primary);
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
