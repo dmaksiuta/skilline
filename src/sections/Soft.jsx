@@ -5,16 +5,16 @@ import user from "../assets/soft/user.svg";
 export const Soft = () => {
   return (
     <>
-      <div className="container soft">
-        <h2 className="soft__title">
+      <div className="container soft ">
+        <h2 data-aos="zoom-in" className="soft__title">
           <span>All-In-One </span> Cloud Software.
         </h2>
-        <p className="soft__desc">
+        <p data-aos="zoom-in" className="soft__desc">
           Skilline is one powerful online software suite that combines all the
           tools needed to run a successful school or office.
         </p>
         <div className="soft__info">
-          <div className="info__online">
+          <div data-aos="flip-right" className="info__online">
             <div className="info__online-image">
               <img src={file} alt="file" />
             </div>
@@ -26,7 +26,7 @@ export const Soft = () => {
               legal transactions. Send customized invoices and contracts
             </p>
           </div>
-          <div className="info__ease">
+          <div data-aos="flip-right" className="info__ease">
             <div className="info__ease-image">
               <img src={calendar} alt="calendar" />
             </div>
@@ -38,7 +38,7 @@ export const Soft = () => {
               campuses. Keep detailed records of student attendance
             </p>
           </div>
-          <div className="info__customer">
+          <div data-aos="flip-right" className="info__customer">
             <div className="info__customer-image">
               <img src={user} alt="user" />
             </div>

@@ -4,7 +4,7 @@ export const Classroom = () => {
   return (
     <>
       <section className="section-classroom container">
-        <div className="section-classroom__info">
+        <div data-aos="zoom-in-right" className="section-classroom__info">
           <h2 className="section-classroom__title">
             Everything you can do in a physical classroom,
             <span className="section-classroom__span">
@@ -20,7 +20,7 @@ export const Classroom = () => {
             Learn more
           </a>
         </div>
-        <div className="section-classroom__avatar">
+        <div data-aos="zoom-out" className="section-classroom__avatar">
           <div className="section-classroom__border">
             <div className="section-classroom__border-bg"></div>
             <a href="/">

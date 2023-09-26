@@ -168,12 +168,20 @@
     letter-spacing: 0.88rem;
     transition: var(--transition);
 
+    @include tablet {
+      text-align: center;
+    }
+
     &:hover {
       color: var(--c-after-brand);
     }
 
     &:first-child {
       padding-right: 20px;
+
+      @include tablet {
+        padding-right: 0;
+      }
     }
 
     &._line {
@@ -183,6 +191,10 @@
       align-items: center;
       padding-left: 20px;
       padding-right: 20px;
+      @include tablet {
+        padding-right: 0;
+        padding-left: 0;
+      }
 
       &::before {
         position: absolute;

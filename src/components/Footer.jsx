@@ -7,11 +7,19 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="footer">
-      <div className="footer__head">
+    <footer
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      className="footer slide-top"
+    >
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        className="footer__head"
+      >
         <div className="footer__logo">
           <a className="footer__a" href="">
-            <img src={footer} alt="footer logo" />
+            <img className="rotate-in-center" src={footer} alt="footer-logo" />
           </a>
         </div>
         <div className="footer__title _line-title">Virtual Class for Zoom</div>
