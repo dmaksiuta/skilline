@@ -5,6 +5,18 @@
   align-items: center;
   gap: 20rem;
 
+  @include tablet {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    justify-content: space-around;
+    background: var(--c-before-accent);
+  }
+
   &__logo {
     width: 150rem;
     height: 83rem;
@@ -61,7 +73,6 @@
       transform: translateX(-120%);
       transition: var(--transition);
       gap: 150rem;
-
     }
 
     &._active {

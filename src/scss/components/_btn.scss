@@ -15,12 +15,12 @@
   &._primary {
     color: var(--c-white);
     background: var(--c-accent);
-    border: 1rem solid transparent;
+    border: 1px solid transparent;
     transition: var(--transition);
 
     &:hover {
       background: transparent;
-      border: 1rem solid var(--c-accent);
+      border: 1px solid var(--c-accent);
       color: var(--c-accent);
     }
   }

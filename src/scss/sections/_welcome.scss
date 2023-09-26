@@ -7,6 +7,10 @@
   position: relative;
   flex-direction: column;
 
+  @include tablet {
+    padding-top: 100rem;
+  }
+
   &__container {
     width: 100%;
     display: flex;
