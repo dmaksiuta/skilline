@@ -5,15 +5,15 @@ import user from "../assets/soft/user.svg";
 export const Soft = () => {
   return (
     <>
-      <div className="container soft ">
-        <h2 data-aos="zoom-in" className="soft__title">
-          <span>All-In-One </span> Cloud Software.
+      <section className="section-soft container">
+        <h2 data-aos="zoom-in" className="section-soft__title">
+          <span>All-In-One </span> Cloud section-software.
         </h2>
-        <p data-aos="zoom-in" className="soft__desc">
-          Skilline is one powerful online software suite that combines all the
-          tools needed to run a successful school or office.
+        <p data-aos="zoom-in" className="section-soft__desc">
+          Skilline is one powerful online section-software suite that combines
+          all the tools needed to run a successful school or office.
         </p>
-        <div className="soft__info">
+        <div className="section-soft__info">
           <div data-aos="flip-right" className="info__online">
             <div className="info__online-image">
               <img src={file} alt="file" />
@@ -49,7 +49,7 @@ export const Soft = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
