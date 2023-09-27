@@ -5,34 +5,34 @@ import blackboard from "../assets/news/blackboard.jpg";
 
 export const News = () => {
   return (
-    <section className="section-news container">
-      <div className="container section-news__container">
-        <h5 data-aos="zoom-in-up" className="section-news__title">
-          Lastest section-news and Resources
+    <section className="news container">
+      <div className="container news__container">
+        <h5 data-aos="zoom-in-up" className="news__title">
+          Lastest news and Resources
         </h5>
-        <p data-aos="zoom-in-up" className="section-news__desc">
+        <p data-aos="zoom-in-up" className="news__desc">
           See the developments that have occurred to Skillines in the world
         </p>
 
-        <div data-aos="zoom-out-right" className="section-news__info">
-          <div className="section-news__main-section-news">
-            <img src={friendly} alt="" className="section-news__img" />
-            <div className="section-news__title-icon">section-news</div>
-            <a href="/" className="main-section-news__title">
+        <div data-aos="zoom-out-right" className="news__info">
+          <div className="news__main-news">
+            <img src={friendly} alt="" className="news__img" />
+            <div className="news__title-icon">news</div>
+            <a href="/" className="main-news__title">
               Class adds $30 million to its balance sheet for a Zoom-friendly
               edtech solution
             </a>
-            <p className="main-section-news__decs">
+            <p className="main-news__decs">
               Class, launched less than a year ago by Blackboard co-founder
               Michael Chasen, integrates exclusively...
             </p>
-            <a href="/" className="main-section-news__more">
+            <a href="/" className="main-news__more">
               Read more
             </a>
           </div>
 
-          <div data-aos="zoom-out-left" className="section-news__box">
-            <div className="section-news__item">
+          <div data-aos="zoom-out-left" className="news__box">
+            <div className="news__item">
               <img src={technologies} alt="" className="item__img" />
               <div className="item__info">
                 <a href="/" className="item__title">
@@ -44,7 +44,7 @@ export const News = () => {
                 </p>
               </div>
             </div>
-            <div className="section-news__item">
+            <div className="news__item">
               <img src={investors} alt="" className="item__img" />
               <div className="item__info">
                 <a href="/" className="item__title">
@@ -57,7 +57,7 @@ export const News = () => {
                 </p>
               </div>
             </div>
-            <div className="section-news__item">
+            <div className="news__item">
               <img src={blackboard} alt="" className="item__img" />
               <div className="item__info">
                 <a href="/" className="item__title">

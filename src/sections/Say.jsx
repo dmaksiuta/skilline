@@ -6,28 +6,28 @@ import line from "../assets/say/line.svg";
 export const Say = () => {
   return (
     <>
-      <section className="section-say container">
-        <div data-aos="zoom-out-up" className="section-say__info">
-          <h5 className="section-say__info-header">
-            <span className="section-say__info-span">
+      <section className="say container">
+        <div data-aos="zoom-out-up" className="say__info">
+          <h5 className="say__info-header">
+            <span className="say__info-span">
               <img src={line} alt="" />
             </span>
             TESTIMONIAL
           </h5>
-          <h3 className="section-say__info-title">What They section-say?</h3>
-          <p className="section-say__info-desc">
+          <h3 className="say__info-title">What They say?</h3>
+          <p className="say__info-desc">
             Skilline has got more than 100k positive ratings from our users
             around the world.
           </p>
-          <p className="section-say__info-desc">
+          <p className="say__info-desc">
             Some of the students and teachers were greatly helped by the
             Skilline.
           </p>
-          <p className="section-say__info-text">
+          <p className="say__info-text">
             Are you too? Please give your assessment
           </p>
-          <div className="section-say__btn-asse">
-            <a href="/" className="btn-asse _section-say">
+          <div className="say__btn-asse">
+            <a href="/" className="btn-asse _say">
               <span>Write your assessment</span>
               <span className="btn-asse__icon">
                 <svg
@@ -45,31 +45,31 @@ export const Say = () => {
             </a>
           </div>
         </div>
-        <div data-aos="flip-down" className="section-say__about">
-          <div className="section-say__about-image">
+        <div data-aos="flip-down" className="say__about">
+          <div className="say__about-image">
             <img
-              className="section-say__about-image _student"
+              className="say__about-image _student"
               src={student}
               alt=""
             />
             <img
-              className="section-say__about-image _arrow"
+              className="say__about-image _arrow"
               src={arrow}
               alt=""
             />
           </div>
-          <div className="section-say__about-border">
-            <div className="section-say__about-item">
-              <p className="section-say__about-text">
+          <div className="say__about-border">
+            <div className="say__about-item">
+              <p className="say__about-text">
                 Thank you so much for your help. Its exactly what Ive been
                 looking for. You wont regret it. It really saves me time and
                 effort. Skilline is exactly what our business has been lacking.
               </p>
-              <div className="section-say__about-reviews">
-                <h5 className="section-say__about-name">Gloria Rose</h5>
-                <a href="/" className="section-say__about-mark">
-                  <img src={star} alt="" />
-                  <span className="section-say__about-span">
+              <div className="say__about-reviews">
+                <h5 className="say__about-name">Gloria Rose</h5>
+                <a href="/" className="say__about-mark">
+                  <img src={star} alt="star" />
+                  <span className="say__about-span">
                     12 reviews at Yelp
                   </span>
                 </a>
