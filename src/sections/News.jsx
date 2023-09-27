@@ -6,7 +6,7 @@ import blackboard from "../assets/news/blackboard.jpg";
 export const News = () => {
   return (
     <section className="news container">
-      <div className="container news__container">
+      <div className="news__container">
         <h5 data-aos="zoom-in-up" className="news__title">
           Lastest news and Resources
         </h5>
