@@ -10,7 +10,7 @@ export const Say = () => {
         <div className="say__info">
           <h5 className="say__info-header">
             <span className="say__info-span">
-              <img src={line} alt="" /> 
+              <img src={line} alt="" />
             </span>
             TESTIMONIAL
           </h5>
@@ -31,7 +31,6 @@ export const Say = () => {
               <span>Write your assessment</span>
               <span className="btn-asse__icon">
                 <svg
-                  
                   viewBox="0 0 80 80"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +53,9 @@ export const Say = () => {
           <div className="say__about-border">
             <div className="say__about-item">
               <p className="say__about-text">
-                "Thank you so much for your help. It's exactly what I've been
-                looking for. You won't regret it. It really saves me time and
-                effort. Skilline is exactly what our business has been lacking."
+                Thank you so much for your help. Its exactly what Ive been
+                looking for. You wont regret it. It really saves me time and
+                effort. Skilline is exactly what our business has been lacking.
               </p>
               <div className="say__about-reviews">
                 <h5 className="say__about-name">Gloria Rose</h5>
