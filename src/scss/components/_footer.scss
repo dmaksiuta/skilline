@@ -147,7 +147,7 @@
     margin-top: 96rem;
     display: flex;
     text-align: center;
-    margin-left: 50rem;
+    justify-content: center;
 
     @include tablet {
       display: grid;
