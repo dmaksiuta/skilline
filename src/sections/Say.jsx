@@ -6,8 +6,8 @@ import line from "../assets/say/line.svg";
 export const Say = () => {
   return (
     <>
-      <div className="container say">
-        <div className="say__info">
+      <section className="container say">
+        <div data-aos="zoom-out-up" className="say__info">
           <h5 className="say__info-header">
             <span className="say__info-span">
               <img src={line} alt="" />
@@ -45,7 +45,7 @@ export const Say = () => {
             </a>
           </div>
         </div>
-        <div className="say__about">
+        <div data-aos="flip-down" className="say__about">
           <div className="say__about-image">
             <img className="say__about-image _student" src={student} alt="" />
             <img className="say__about-image _arrow" src={arrow} alt="" />
@@ -67,7 +67,7 @@ export const Say = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

@@ -1,19 +1,21 @@
 .say {
   margin-top: 158rem;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   gap: 50rem;
-  padding-left: 100rem;
+  justify-content: center;
   @include desktop-small {
-    flex-direction: column;
-    padding-left: 50rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90rem;
+    margin-bottom: 90rem;
   }
 
   &__info {
     max-width: 607rem;
     @include desktop-small {
-      margin: 0 auto;
+      margin-inline: auto;
+      text-align: center;
     }
   }
   &__info-span {
@@ -67,24 +69,29 @@
   &__about-image {
     display: flex;
     align-items: center;
-    margin-right: 200rem;
     @include desktop-small {
       margin-top: 50rem;
-    }
-    @include tablet-small {
       margin-right: 0;
+      justify-content: center;
     }
   }
   &__about-border {
     max-width: 720rem;
     border-radius: 20px 0px 0px 20px;
-    border: 14rem solid var(--c-border-item);
+    border: 14px solid var(--c-border-item);
     border-top: 0;
     border-bottom: 0;
     border-right: 0;
     position: relative;
     left: 69rem;
     top: -200rem;
+
+    @include desktop-small {
+      position: inherit;
+      display: grid;
+      margin-top: 20px;
+      margin-inline: auto;
+    }
   }
   &__about-item {
     border-radius: 0 20px 20px 0;
@@ -162,16 +169,18 @@
   ._arrow {
     position: relative;
     cursor: pointer;
-    right: 263rem;
+    left: -64rem;
     max-width: 150rem;
     max-height: 150rem;
-    @include tablet-small {
+    @include desktop-small {
       display: none;
     }
   }
   ._student {
     object-fit: cover;
-    flex-shrink: 0;
+
+    max-width: 1052rem;
+    max-height: 702rem;
     @include tablet-small {
       max-width: 100%;
     }

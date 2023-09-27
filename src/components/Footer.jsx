@@ -9,7 +9,7 @@ export const Footer = () => {
   return (
     <footer
       data-aos="fade-up"
-      data-aos-duration="1200"
+      data-aos-duration="600"
       className="footer slide-top"
     >
       <div

@@ -85,9 +85,7 @@
     border-radius: 80px;
     background: transparent;
     color: var(--c-white);
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-    padding-left: 30rem;
+    padding: 15rem 258rem 15rem 30rem;
     outline: none;
     border: 0;
   }
@@ -154,6 +152,7 @@
     @include tablet {
       display: grid;
       gap: 45px;
+      margin-left: 0;
     }
   }
 
@@ -167,10 +166,6 @@
     line-height: normal;
     letter-spacing: 0.88rem;
     transition: var(--transition);
-
-    @include tablet {
-      text-align: center;
-    }
 
     &:hover {
       color: var(--c-after-brand);
